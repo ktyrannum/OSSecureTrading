@@ -296,17 +296,20 @@ return $decrypted;
 }
 
 function update_prices ($mysqli) {
+	$username = $_SESSION['username'];
 	$transid = get_userid($mysqli);
 	for($x = 0; $x < count($transid); $x++) {						
-		$userid = $transid[$x];	
-	$username = $_SESSION['username'];
- 	$columns= $mysqli -> query("SHOW COLUMNS FROM osSecurities");
+		$userid = $transid[$x];	 	
+
+	$columns= $mysqli -> query("SHOW COLUMNS FROM osSecurities");
+
+
  	$result = $mysqli -> query("SELECT osStockTickers FROM osSecurities WHERE osUserID = '$userid'");
 	$fields = array("osStockTickers");
-	$tickerarray = array();
  	$array = array();
  	$i = 0;
- 	$x = 0;
+
+
          // Get the Column Name
  	while ($row = $columns -> fetch_array(MYSQLI_BOTH)) {
 			if (in_array($row['Field'], $fields )) {				
@@ -323,28 +326,30 @@ function update_prices ($mysqli) {
 
 			if (!empty($ticker)) {
 				if ($stream = simplexml_load_file('https://finance.yahoo.com/webservice/v1/symbols/' .$ticker. '/quote?format=xml')) {
-					$price = $stream->resources[0]->resource->field[1];					
-	
-					if ($insert_stmt = $mysqli->prepare("UPDATE osSecurities SET osAskRealTime = ? WHERE osUsername = '$username' AND osUserID = ?" )) {
+					$price = $stream->resources[0]->resource->field[1];
+										
 					
-					    $insert_stmt->bind_param('ss', encrypt_data($mysqli, $price), $userid);
-					    // Execute the prepared query.
-					    if (! $insert_stmt->execute()) {
-						header('Location: error.php?err=Key generation failure: INSERT');
-						}
+	
+				if ($insert_stmt = $mysqli->prepare("UPDATE osSecurities SET osAskRealTime = ? WHERE osUsername = '$username' AND osUserID = ?" )) {
+					
+				    $insert_stmt->bind_param('ss', encrypt_data($mysqli, $price), $userid);
+				    // Execute the prepared query.
+				    if (! $insert_stmt->execute()) {
+					header('Location: error.php?err=Key generation failure: INSERT');
+				    }
 
-					}
-				
+				}
+				//return $price;
 			
 				}
  			
 			}
-		
+		//	$i++;
  		}
- 	
+ 	//$i = 0; // Resetting columns
 	}
 	}
-
+//return $ticker;
 
 }
 
