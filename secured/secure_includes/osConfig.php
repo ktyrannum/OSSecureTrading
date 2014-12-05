@@ -20,7 +20,7 @@ if(!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == ""){
  */  
 define("HOST", "localhost");     // The host you want to connect to.
 define("USER", "dblogin");    // The database username. 
-define("PASSWORD", "F@tal1ty10293");    // The database password. 
+define("PASSWORD", "");    // The database password. 
 define("DATABASE", "osSecureTrading");    // The database name.
  
 define("CAN_REGISTER", "any");
