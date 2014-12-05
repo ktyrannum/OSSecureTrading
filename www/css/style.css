@@ -1,0 +1,178 @@
+body {
+background-color:#f1f1f1;
+font-family: verdana, arial, sans-serif;
+color:#333;
+margin:0;
+padding:0;
+}
+ 
+#wrapper {
+width:960px;
+background-color:#F6F6F6;
+margin:0 auto;
+border-left:1px solid #ccc;
+border-right:1px solid #ccc;
+}
+ 
+#header {
+width:960px;
+height:135px;
+margin:0 auto;
+margin-bottom:25px;
+border-bottom:1px solid #ccc;
+border-top:1px solid #ccc;
+}
+ 
+#header h2 {
+padding:10px;
+}
+ 
+#nav {
+width:960px;
+height:40px;
+border-bottom:1px solid #ccc;
+}
+ 
+#nav a {
+display:inline;
+padding:10px;
+text-decoration:none;
+background-color:#f1f1f1;
+}
+ 
+#nav a:hover {
+background-color:#bababa;
+height:80px;
+}
+ 
+#content {
+width:675px;
+float:left;
+padding:10px;
+}
+
+#content2 {
+width:675px;
+float:left;
+padding:10px;
+}
+ 
+#sidebar {
+width:200px;
+float:right;
+margin-bottom:25px;
+}
+ 
+#sidebar a {
+text-decoration:none;
+}
+ 
+#sidebar li {
+list-style:none;
+}
+ 
+#footer {
+clear:both;
+width:960px;
+height:135px;
+border-top:1px solid #ccc;
+}
+ 
+#footer p {
+padding:10px;
+}
+
+.stocktable {
+	margin:0px;padding:0px;
+	width:100%;
+	border:1px solid #7cebff;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}.stocktable table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}.stocktable tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.stocktable table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.stocktable table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.stocktable tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}.stocktable tr:hover td{
+	
+}
+.stocktable tr:nth-child(odd){ background-color:#bfbfbf; }
+.stocktable tr:nth-child(even)    { background-color:#ffffff; }.stocktable td{
+	vertical-align:middle;
+	
+	
+	border:1px solid #7cebff;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:5px;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}.stocktable tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.stocktable tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.stocktable tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.stocktable tr:first-child td{
+		background:-o-linear-gradient(bottom, #e2e2e2 5%, #0090c9 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e2e2e2), color-stop(1, #0090c9) );
+	background:-moz-linear-gradient( center top, #e2e2e2 5%, #0090c9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#e2e2e2", endColorstr="#0090c9");	background: -o-linear-gradient(top,#e2e2e2,0090c9);
+
+	background-color:#e2e2e2;
+	border:0px solid #7cebff;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+.stocktable tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #e2e2e2 5%, #0090c9 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e2e2e2), color-stop(1, #0090c9) );
+	background:-moz-linear-gradient( center top, #e2e2e2 5%, #0090c9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#e2e2e2", endColorstr="#0090c9");	background: -o-linear-gradient(top,#e2e2e2,0090c9);
+
+	background-color:#e2e2e2;
+}
+.stocktable tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.stocktable tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
