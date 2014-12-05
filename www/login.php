@@ -2,6 +2,11 @@
 include_once '../secured/secure_includes/dbconnect.php';
 include_once '../secured/secure_includes/functions.php';
 
+if(!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == ""){
+    $redirect = "https://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    header("Location: $redirect");
+}
+
 sec_session_start();
 
 if (login_check($mysqli) == true) {
@@ -9,6 +14,7 @@ if (login_check($mysqli) == true) {
 } else {
 	$logged = 'out';
 }
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">

@@ -3,6 +3,7 @@
 // Secure Includes
 include_once 'dbconnect.php';
 include_once 'functions.php';
+include_once 'osConfig.php';
 
 // Start Secure Session
 sec_session_start();
