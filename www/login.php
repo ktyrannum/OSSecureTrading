@@ -56,6 +56,7 @@ if (login_check($mysqli) == true) {
 					<input type="password" name="password" id="password"/>
 					<p class="contact">Private Key:</p> <! -- Temporary until Smart Cards are implemented --!>
 					<p><textarea type="text" name="pkey" id="pkey"" cols="65" rows="15"></textarea></p>
+					<span class = "error">Please enter your privat key</span>
 					<input type="button" value="Login" onclick="formhash(this.form, this.form.password, this.form.pkey);" />
 				</form>
 				<p>

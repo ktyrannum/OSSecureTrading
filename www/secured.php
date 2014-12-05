@@ -23,7 +23,7 @@ sec_session_start();
 
 		<div id="content">
 		<?php if (login_check($mysqli) == true) : ?>
-
+			<?php if (!htmlentities($_SESSION['pkey']) == "") : ?>
 			    <p><?php include ('../secured/secure_index.php'); ?></p>
 			    <p>
 				Update stock tickers and retrieve live stock prices. All transactions are
@@ -31,11 +31,13 @@ sec_session_start();
 			    </p>
 
 			    <p>Return to <a href="index.php">home page</a></p>
+			
 			<?php else : ?>
 			    <p>
-				<span class="error">You are not authorized to access this page.</span> Please <a href="index.php">login</a>.
+				<span class="error">You are not authorized to access this page, or you have not supplied the correct information.</span> Please <a href="index.php">login</a>.
 			    </p>
-			<?php endif; ?>
+		<?php endif; ?>
+		<?php endif; ?>
 			</div>
 			<!-- end #content -->
 
