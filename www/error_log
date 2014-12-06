@@ -163,3 +163,43 @@
 [05-Dec-2014 05:02:09 UTC] PHP Warning:  openssl_private_decrypt(): key parameter is not a valid private key in /home/tyrantut/secured/secure_includes/functions.php on line 293
 [05-Dec-2014 05:02:09 UTC] PHP Warning:  openssl_private_decrypt(): key parameter is not a valid private key in /home/tyrantut/secured/secure_includes/functions.php on line 293
 [05-Dec-2014 05:02:09 UTC] PHP Warning:  openssl_private_decrypt(): key parameter is not a valid private key in /home/tyrantut/secured/secure_includes/functions.php on line 293
+[05-Dec-2014 07:12:25 UTC] PHP Fatal error:  Can't use function return value in write context in /home/tyrantut/public_html/secured.php on line 26
+[06-Dec-2014 07:11:17 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 62
+[06-Dec-2014 07:13:14 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 40
+[06-Dec-2014 07:14:26 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 62
+[06-Dec-2014 07:20:51 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 60
+[06-Dec-2014 07:21:14 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 66
+[06-Dec-2014 07:23:46 UTC] PHP Warning:  simplexml_load_file(https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:23:46 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml&quot; in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:25:13 UTC] PHP Warning:  simplexml_load_file(https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:25:13 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml&quot; in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:25:17 UTC] PHP Warning:  simplexml_load_file(https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:25:17 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml&quot; in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:25:44 UTC] PHP Warning:  simplexml_load_file(https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:25:44 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml&quot; in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:27:58 UTC] PHP Warning:  simplexml_load_file(https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:27:58 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml&quot; in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:40:19 UTC] PHP Warning:  simplexml_load_file(https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:40:19 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml&quot; in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:40:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/tyrantut/secured/secure_includes/secure_prices.inc.php:39) in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 62
+[06-Dec-2014 07:40:26 UTC] PHP Warning:  simplexml_load_file(https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml): failed to open stream: HTTP request failed! HTTP/1.0 404 Not Found
+ in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:40:26 UTC] PHP Warning:  simplexml_load_file(): I/O warning : failed to load external entity &quot;https://finance.yahoo.com/webservice/v1/symbols//quote?format=xml&quot; in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 39
+[06-Dec-2014 07:40:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/tyrantut/secured/secure_includes/secure_prices.inc.php:39) in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 62
+[06-Dec-2014 07:41:18 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/tyrantut/secured/secure_includes/secure_prices.inc.php on line 15
+[06-Dec-2014 07:45:35 UTC] PHP Warning:  include(../secured/secure_includes/secure.inc.php): failed to open stream: No such file or directory in /home/tyrantut/public_html/secured.php on line 28
+[06-Dec-2014 07:45:35 UTC] PHP Warning:  include(): Failed opening '../secured/secure_includes/secure.inc.php' for inclusion (include_path='.:/usr/local/lib/php') in /home/tyrantut/public_html/secured.php on line 28
+[06-Dec-2014 07:46:23 UTC] PHP Warning:  include_once(secure_includes/dbconnect.php): failed to open stream: No such file or directory in /home/tyrantut/secured/secure_includes/secure.inc.php on line 2
+[06-Dec-2014 07:46:23 UTC] PHP Warning:  include_once(): Failed opening 'secure_includes/dbconnect.php' for inclusion (include_path='.:/usr/local/lib/php') in /home/tyrantut/secured/secure_includes/secure.inc.php on line 2
+[06-Dec-2014 07:46:23 UTC] PHP Warning:  include_once(secure_includes/functions.php): failed to open stream: No such file or directory in /home/tyrantut/secured/secure_includes/secure.inc.php on line 3
+[06-Dec-2014 07:46:23 UTC] PHP Warning:  include_once(): Failed opening 'secure_includes/functions.php' for inclusion (include_path='.:/usr/local/lib/php') in /home/tyrantut/secured/secure_includes/secure.inc.php on line 3
+[06-Dec-2014 07:46:27 UTC] PHP Warning:  include_once(secure_includes/dbconnect.php): failed to open stream: No such file or directory in /home/tyrantut/secured/secure_includes/secure.inc.php on line 2
+[06-Dec-2014 07:46:27 UTC] PHP Warning:  include_once(): Failed opening 'secure_includes/dbconnect.php' for inclusion (include_path='.:/usr/local/lib/php') in /home/tyrantut/secured/secure_includes/secure.inc.php on line 2
+[06-Dec-2014 07:46:27 UTC] PHP Warning:  include_once(secure_includes/functions.php): failed to open stream: No such file or directory in /home/tyrantut/secured/secure_includes/secure.inc.php on line 3
+[06-Dec-2014 07:46:27 UTC] PHP Warning:  include_once(): Failed opening 'secure_includes/functions.php' for inclusion (include_path='.:/usr/local/lib/php') in /home/tyrantut/secured/secure_includes/secure.inc.php on line 3

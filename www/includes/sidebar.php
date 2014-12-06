@@ -3,13 +3,13 @@
 
 	<h3>Navigation</h3>
 	<li>
-		<a href="http://ossecuretrading.com"">Home</a>
+		<a href="httpw://ossecuretrading.com"">Home</a>
 	</li>
 	<li>
 		<a href="#">About Us</a>
 	</li>
 	<li>
-		<a href="#">Contact</a>
+		<a href="mailto:webmaster@ossecuretrading.com">Contact</a>
 	</li>
 	<li>
 		<a href="registration.php">Registration</a>

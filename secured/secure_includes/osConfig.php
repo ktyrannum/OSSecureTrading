@@ -2,7 +2,7 @@
 $isPostBack = false;
 
 $referer = "";
-$thisPage = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+$thisPage = "https://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 
 if (isset($_SERVER['HTTP_REFERER'])){
     $referer = $_SERVER['HTTP_REFERER'];

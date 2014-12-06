@@ -23,8 +23,9 @@ sec_session_start();
 
 		<div id="content">
 		<?php if (login_check($mysqli) == true) : ?>
-			<?php if (!htmlentities($_SESSION['pkey']) == "") : ?>
-			    <p><?php include ('../secured/secure_index.php'); ?></p>
+			<?php if (!htmlentities($_SESSION['userpkey']) == "") : ?>
+			    <p><?php echo $error_msg; ?> </p>
+			    <p><?php include ('../secured/secure_includes/secure.inc.php'); ?></p>
 			    <p>
 				Update stock tickers and retrieve live stock prices. All transactions are
 				Encrypted with your <br>4096-bit RSA encryption key and session TLS. Good luck...
